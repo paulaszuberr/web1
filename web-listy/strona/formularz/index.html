@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="pl-PL">
+	<head>
+		<meta charset="utf-8">
+		<title>Form</title>
+	</head>
+
+	<body>
+		<form>
+		<h1>Zapisz się na zajęcia!</h1>
+
+		<p>Proszę, uzupełnij swoje dane</p>
+
+		<p>
+			<label>Imię:
+				<input type="text" size = "25" maxlength="30" name="imie"/>
+			</label>
+		</p>
+
+		<p>
+			<label>Nazwisko:
+				<input type="text" size = "25" maxlength="30" name="nazwisko"/>
+			</label>
+		</p>
+
+		<p>
+			<label>Wybór zajęć:
+				<select name = "wybor">
+					<option selected>Latino podstawowy</option>
+					<option>Latino zaawansowany</option>
+					<option>Modern podstawowy</option>
+					<option>Modern zaawansowany</option>
+					<option>Tango</option>
+				</select>
+			</label>
+		</p>
+
+		<p>
+			<label>Twój email <input type="email"></label>
+		</p>
+
+		<p>
+			<strong>Jak się o nas dowiedziałeś?</strong><br/>
+			<label>Znajomi
+			<input type="radio" name="howtosite"
+			value="znajomi" checked></label>
+			<label>Ogłoszenie
+				<input name="howtosite" type="radio"
+				value="ogloszenie"></label>
+			<label>Artykuł
+				<input name="howtosite" type="radio"
+				value="artykul"></label>
+		</p>
+
+		<p>
+			<strong>Czy chcesz mieć koszulkę klubową?</strong><br/>
+			Tak<input type="checkbox" name="koszulka"
+			value="Tak">
+			Nie<input type="checkbox" name="koszulka"
+			value="Nie">
+		</p>
+
+		<p>
+			<label>
+				<strong>Jeśli chcesz nam coś powiedzieć, zrób to teraz<br></strong>
+				<textarea name=comments rows=4 cols="36" maxlength="200"></textarea>
+			</label>
+		
+		</p>
+		<p>
+			<input type="submit" value="Potwierdź">
+			<input type="reset" value="Wyczyść">
+		</p>
+		
+		</form>
+	</body>
+</html>

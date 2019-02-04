@@ -1,0 +1,11 @@
+BeforeHTML5,websites could store only small amounts of text-based information on a user’s
+computer using cookies. A cookie (p. 378) is a key/value pair in which each key has a corresponding
+value. The key and value are both strings.
+• Cookies are stored by the browser on the user’s computer to maintain client-specific information
+during and between browser sessions.
+• When a user visits awebsite, the browser locates any cookieswritten by thatwebsite and sends
+them to the server. Cookies may be accessed only by the web server and scripts of the website
+from which the cookies originated.
+• Webapplicationscanusethewindow object’s localStorage property (p. 378) to store up to several
+megabytes of key/value-pair string data on the user’s computer and can access that data across
+browsing sessions and browser tabs.

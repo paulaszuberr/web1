@@ -1,0 +1,27 @@
+body {
+	background-image:url('samba_dancers.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: bottom right;
+	/*left top
+left center
+left bottom
+right top
+right center
+right bottom
+center top
+center center
+center bottom
+
+x% y%
+xpos ypos
+initial
+inherit
+*/
+
+
+}
+
+h1 {
+	font-size: 250%;
+}

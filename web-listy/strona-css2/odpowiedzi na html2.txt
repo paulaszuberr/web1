@@ -1,0 +1,3 @@
+placeholder nie dzia³a na : month, color, textarea
+
+chrom w kalendarze: 

@@ -1,0 +1,66 @@
+@media screen and (min-width: 800px){
+
+
+body {
+	background-image: url(tlo.jpg), url(tlo2.jpg);
+	background-repeat: no-repeat, no-repeat;
+	height: 100% 100%;
+	background-position: left top, right top;
+	background-attachment: initial;
+	/*image will not scroll initaila */
+}
+
+#wstep {
+	margin: 70px;
+	padding: 70px;
+
+	 /*generate space around an element's content, inside of any defined borders
+
+	 może być padding-top, -right, -bottom, -left*/
+}
+
+table {
+	width: 50%;
+	height: 150px;
+	position: relative;
+	text-align: left;
+	vertical-align: bottom;
+	padding: 15px;
+	border-bottom: 1px solid #ddd;
+	background-color: #f2f2f2;
+}
+
+#nagłówek {
+	float: right;
+}
+
+#org {
+	clear: left;
+	/* or left or right*/
+}
+
+p:last-of-type {
+	background-color: orange;
+}
+
+
+article:not(.akapit) {
+	background-color: pink;
+
+	/*p:not(.akapit)
+do każdego elementu p, który nie posiada atrybutu class o 
+wartości akapit lub którego atrybut class nie posiada wartości akapit*/
+}
+
+p:nth-child(even){
+	color: red;
+}
+
+p:nth-last-child(3) {
+	color: pink;
+	/*od dołu do góry, even, odd, liczba całkowita, wzór*/
+}
+tr:only-child {
+	color: orange;
+}
+}

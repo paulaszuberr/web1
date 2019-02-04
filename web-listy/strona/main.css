@@ -1,0 +1,91 @@
+
+h1 {
+	color: yellow;
+	padding: 10px;
+	text-align: center;
+}
+
+/*Relative to the font-size of the element (2em means 2 times the size of the current font)*/
+#wstep2 {
+	font-size: 16px;
+	line-height: 2em;
+	font-weight: bolder;
+	font-style: italic;
+	font-variant: small-caps;
+	line-height: normal;
+}
+
+/*%	Relative to the parent element*/
+
+#odnosniki1 {
+	font-size: 150%;
+	font-weight: lighter;
+	font-variant: small-caps;
+	border: 1px solid black;
+	line-height: 1.6;
+}
+
+#oartykule {
+	color: pink;
+	text-align: center;
+	line-height: 80%;
+}
+
+
+/*pt	points (1pt = 1/72 of 1in)*/
+#odnosniki2 {
+	font-size: 15pt;
+	line-height: 200%;
+	border-style: ridge;
+	border-width: thick;
+	font-family: "Arial", Times, serif;
+	border-color: yellow;
+}
+
+body {
+	background-image: url(tlo2.jpg);
+	background-repeat: repeat;
+}
+
+
+
+.gay {
+	float: left;
+	width: 25%;
+	height: auto;	
+}
+
+
+
+.say {
+	clear: left;
+}
+
+#odnosniki1 {
+	border-width: thick;
+}
+
+a:link {
+	color: green;
+}
+
+a:visited {
+	color: pink;
+}
+
+a:hover {
+	color: red;
+}
+
+a:active {
+	color: yellow;
+}
+
+label:target {
+	color: red;
+
+	/*to modern, gdy w danym momencie dany element HTML reprezentuje fragment treści, do którego przenieśliśmy się za pomocą adresu URI 
+	wskazującego bezpośrednio na wartość atrybutu id wspomnianego elementu HTML.*/
+}
+
+

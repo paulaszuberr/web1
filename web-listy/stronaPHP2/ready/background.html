@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<!-- Gathering data to be written as a cookie. -->
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Ciasteczkowy potwor na twoim kompie!!!</title>
+      <style type = "text/css">
+         label { width: 7em; float: left; }
+      </style>
+   </head>
+   <body>
+      <h2> Naciśnij Zrób ciasteczko, żeby zapisać twoje dane. </h2>   
+      <form method = "post" action = "background.php"> 
+         <h3>Wybierz sobie kolor tła:</h3>
+         <select name="background">
+                <option value="black">Black</option>
+                <option value="white">White</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                </select><br />
+
+
+        <h3>Wybierz sobie kolor czcionki:</h3>
+            <select name="foreground">
+                <option value="black">Black</option>
+                <option value="white">White</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                </select>
+        
+        <h3>Wybierz sobie styl czcionki:</h3>
+            <select name="font">
+                <option value="Arial">Arial</option>
+                <option value="Verdana">Verdana</option>
+                <option value="Helvetica">Helvetica</option>
+                <option value="sans-serif">sans-serif</option>
+                </select>
+
+
+        <p><input type = "submit" value = "Write Cookie">
+      </form>
+   </body>
+</html>

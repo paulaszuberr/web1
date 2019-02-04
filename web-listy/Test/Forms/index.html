@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<!-- Fig. 12.13: collections.html -->
+ <!-- Using the links collection. -->
+ <html>
+ <head>
+	<meta charset="utf-8">
+ <title>Using Forms Collection</title>
+ </head>
+ <body>
+
+
+	<form action="/action_page.php">>
+	  First Name: <input type="text" name="fname" value="Donald"><br>
+	  Last Name: <input type="text" name="lname" value="Duck">
+	City: <input type="text" name="fname" value="Duckburg"><br>
+	  <input type="submit" value="Submit">
+	  <input type="reset" value="Reset">
+	</form> 
+
+	<p>Click the button to display the number of form elements in the document.</p>
+
+	<button onclick="numFormsFun()">Try it</button>
+
+	<p id="no"></p>
+
+
+	<form id="myCarForm">
+	  Favorite Car: <input type="text" name="fname" value="Volvo">
+	</form>
+
+	<form id="myColorForm">
+	  Favorite Color: <input type="text" name="favcolor" value="Blue">
+	</form>
+
+	<p>Click the button to display the id of the first form element (index 0) in the document.</p>
+
+	<button onclick="idFun()">Try it</button>
+
+	<p id="id"></p>
+
+
+
+	<p>Click the button to display the HTML content of the form element with id="myForm".</p>
+
+	<button onclick="byIdFun()">Try it</button>
+
+	<p id="byId"></p>
+
+
+	<p>Click the button to display the name of each form element in the document.</p>
+
+	<button type="button" onclick="nameFormFun()">Try it</button>
+
+	<p id="name"></p>
+
+
+	<p>Click the "Try it" button to display the value of each element in the form.</p>
+
+	<button onclick="valueFun()">Try it</button>
+
+	<p id="val"></p>
+
+
+
+	  <script src = "form.js"></script>
+ </body>
+ </html>

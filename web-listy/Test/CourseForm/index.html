@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8" />
+		<title>Formularz</title>
+		
+		<meta name = "keywords" content ="taniec, muzyka, freetime, pasja, zainteresowania">
+		<meta name = "description" content="Ta strona to strona o tańcu!">
+		
+		<link rel = " stylesheet" type = "text/css" href = "styles.css">
+
+		<script src="CourseForm.js"></script>
+	</head>
+	<body>
+		<section class="s1">
+		<h2>Zapisz się na zajęcia!</h2>
+		</section>
+		
+		<form id="sumbit&clear" method = "post" action = "index.html" autocomplete="on">
+			
+			<input type = "hidden" name = "redirect" value = "index.html">
+			
+
+			<p><label>Imię:
+				<input name = "fname" type = "text" maxlength="30" id="name" size = "25"autofocus>
+				(Tu jest miejsce na Twoje imię, np. Aleksandra, max 30 znaków)
+			</label></p>
+			<p><label>Nazwisko:
+				<input name = "lname" type = "text" size = "25" maxlength="30" id="lastname" size = "25" required>
+				(Tu jest miejsce na Twoje nazwisko, np. Szuber, max 30 znaków)
+			</label></p>
+			<p><label>Email:
+				<input type = "email" id="email" placeholder="nazwa@domena.com" required>
+				(Tu jest miejsce na Twój email)
+			</label></p>
+			<p><label>Tel:
+				<input type="tel" placeholder="000-000-000"
+				pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"/> np. 123-456-689
+			</label></p>
+
+			<p><label for="txtList">Wybierz miesiąc urodzin:
+				<input type="text" id="txtList"
+				placeholder="data sobie" list="months" />
+				<<datalist id="months">
+					<option value = "Styczen">
+					<option value = "Luty">
+					<option value = "Marzec">
+					<option value = "Kwiesień">
+					<option value = "Maj">
+					<option value = "Czerwiec">
+					<option value = "Lipiecipiec">
+					<option value = "Sierpień">
+					<option value = "Wrzesień">
+					<option value = "Październik">
+					<option value = "Listopad">
+					<option value = "Grudzień">
+				</datalist>
+			
+			<p><label>
+				<strong>Jeśli chcesz nam coś powiedzieć, zrób to teraz<br></strong>
+				<textarea name=comments rows=4 cols="36" maxlength="200"></textarea>
+			</label></p>
+			
+			<p>
+				<input id="submit" type = "submit" value = "Submit">
+				<input id="reset" type = "reset" value = "Clear">
+			</p>
+		</form>
+		<p id = "helpText"></p>
+		<p>
+                <a href="index.html">
+                    <img src="pictures/backButton.jpg" width="100" height="100" alt="Back">
+                 </a>
+                
+            </p>
+	</body>
+</html>

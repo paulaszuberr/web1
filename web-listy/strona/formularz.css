@@ -1,0 +1,30 @@
+input:checked {
+	outline: 3px solid red;
+}
+/*każdy element input typpu checkox albo rradio*/
+
+p:empty {
+       background-color: pink;
+      }
+
+/*czemu nic sie nie dzieje?*/
+
+option:enabled {
+	background-color: red;
+}
+
+h1:first-child {
+	background-color: pink;
+}
+
+input:focus {
+	background-color: blue;
+}
+
+label:last-child {
+	background-color: orange;
+}
+
+input:required {
+	color: yellow;
+}

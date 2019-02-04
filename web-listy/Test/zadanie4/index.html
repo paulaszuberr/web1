@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>collections, methods, properties and events</title>
+
+        <link rel = " stylesheet" type = "text/css" href = "styles.css">
+        <script src = "collections.js"></script>
+
+        <style type="text/css">            
+            body    {
+                text-align: center;
+            }
+            .drawing {
+                background: white;
+                border-collapse: collapse;
+                width: 400px;
+                height: 400px;
+            }
+            .drawing.td {
+                width: 4px;
+                height: 4px;
+            }
+            .orange {
+                background: orange;
+            }
+            .green {
+                background: green;
+            }
+            .blue {
+                background: blue;
+            }
+        </style>
+    </head>
+    <body>
+       
+    
+        <p>
+            <table id="drawing" class="drawing">
+                <caption>Draw them! Hold <em>Ctrl</em> to draw in pink, <em>Shift</em> to draw in blue, or <em>Alt</em> to draw in orange.</caption>
+                <tbody id="tabBody"></tbody>
+            </table>
+            <p>coordinate x: <div id="coordX"></div></p>
+            <p>coordinate y: <div id="coordY"></div></p>
+            <!-- <p>key code: <div id="key"></div></p>
+            <p>screen coordinate x: <div id="screenX"></div></p>
+            <p>screen coordinate y: <div id="screenY"></div></p> -->
+        </p>
+        </center>
+        
+    </body>
+	<script type="text/javascript">
+	function showCoords(evt){
+  alert(
+    "screenX value: " + evt.screenX + "\n"
+    + "screenY value: " + evt.screenY + "\n"
+  );
+}
+
+</script>
+</head>
+
+<script type="text/javascript">
+
+    function onmouseoverHandler()
+
+    {
+
+      alert("Cześć, jesteś super!");
+
+    }
+
+    </script>
+
+  </head>
+
+  <body>
+
+    <p onmouseover="onmouseoverHandler();">
+
+      Najedź sobie na mnie, plssss!!!!
+
+    </p>
+
+  </body>
+
+<body onmousedown="showCoords(event)">
+<p>To display the mouse coordinates click anywhere on the page.</p>
+</body>
+</html>

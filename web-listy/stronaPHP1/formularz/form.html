@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<!-- Fig. 19.13: form.html --> 
+<!-- XHTML form for gathering user input. -->
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Form</title>
+      <style type = "text/css">
+         label  { width: 5em; float: left; }
+      </style>
+   </head>
+   <body>
+      <!-- post form data to form.php -->
+      <form method = "post" action = "form.php">
+			<h1>Zapisz się na zajęcia!</h1>
+
+			<p>Proszę, uzupełnij swoje dane</p>
+	
+			 <!-- create four text boxes for user input -->
+			 <div><label>Imię:</label> 
+				<input type = "text" name = "fname"></div>
+			 <div><label>Nazwisko:</label>
+				<input type = "text" name = "lname"></div>
+			 <div><label>Email:</label>
+				<input type = "text" name = "email"></div>
+			 <div><label>Telefon:</label>
+				<input type = "text" name = "phone" 
+				   placeholder = "(555) 555-5555"></div>
+			 </div>
+
+         <h2>Wybór zajęć:</h2>
+
+         <!-- create drop-down list containing dance names -->
+         <select name = "dance">
+            <option>Latino podstawowy</option>
+            <option>Latino zaawansowany</option>
+            <option>Modern podstawowy</option>
+            <option>Modern zaawansowany</option>
+         </select>
+
+         <p>Jak się o nas dowiedziałeś?</p>
+
+         <!-- create five radio buttons -->
+         <p><input type = "radio" name = "os" value = "Znajomi"
+               checked>Znajomi
+            <input type = "radio" name = "os" value = "Ogłoszenie">Ogłoszenie
+            <input type = "radio" name = "os" value = "Artykuł">Artykuł
+            <input type = "radio" name = "os" value = "Other">Inne</p>
+
+         <!-- create a submit button -->
+         <p><input type = "submit" name = "submit" value = "Register"></p>
+      </form>
+   </body>
+</html>

@@ -1,0 +1,48 @@
+input:checked {
+	outline: 3px solid red;
+}
+/*każdy element input typpu checkox albo rradio*/
+
+p:empty {
+       background-color: pink;
+      }
+
+/*czemu nic sie nie dzieje?*/
+
+option:enabled {
+	background-color: red;
+}
+
+h1:first-child {
+	background-color: pink;
+}
+
+input:focus {
+	background-color: blue;
+}
+
+label:last-child {
+	background-color: orange;
+}
+
+input:required {
+	color: yellow;
+}
+
+body {
+	border: 10px double black;
+    padding: 25px;
+    background-image:url(tlo-pink.jpg);
+    background-repeat: repeat-x;
+    /*background-repeat: repeat|repeat-x|repeat-y|no-repeat|initial|inherit;*/
+    background-origin: content-box;
+    /*background-origin: padding-box-default|border-box|content-box|initial|inherit;
+padding-box	Default value. The background image starts from the upper left corner of the padding edge	
+border-box	The background image starts from the upper left corner of the border	
+content-box	The background image starts from the upper left corner of the content	
+initial	Sets this property to its default value. Read about initial	
+inherit	Inherits this property from its parent element. 
+
+*/
+
+}

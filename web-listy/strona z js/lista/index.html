@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Listy</title>
+	
+	<script type="text/javascript">
+
+		var counter = 1;
+			do {
+				document.writeln("<h" + counter + ">To jest " +
+				 " h" + counter + " poziom nagłówka" + "</h" +
+				 counter + ">" );
+		 		++counter;
+				} 
+			while ( counter <= 6 );
+		
+
+
+		for (var count = 1; count <=10; ++count)
+		{
+			if( count == 5)
+				continue;
+
+			document.writeln(count + " ");
+		}
+
+		document.writeln("<p>5 tutaj nie znajdziesz...</p>");
+
+		var elo = 1; 
+		while(elo <= 7)
+		{
+			document.writeln("<p style = 'font-size: " + elo + "ex'>HTML rozmiar czcionki " + elo + "ex</p>");
+			++elo;
+		}
+
+	</script>
+</head>
+<body>
+
+	<!-- <h1 id="list_button">Chcesz wybrać numer 1-3 i zobaczyć co się stanie?</h1>
+	<button type="button" onclick="choosed()">TAK! </button>
+	<p id = "choose"></p> -->
+
+
+	<script src="choose.js"></script>
+</body>
+</html>

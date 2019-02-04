@@ -1,0 +1,155 @@
+
+h1 {
+	color: yellow;
+	padding: 10px;
+	text-align: center;
+}
+
+/*Relative to the font-size of the element (2em means 2 times the size of the current font)*/
+#wstep2 {
+	text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+	font-size: 16px;
+	line-height: 2em;
+	font-weight: bolder;
+	font-style: italic;
+	font-variant: small-caps;
+	line-height: normal;
+}
+
+/*%	Relative to the parent element*/
+
+#odnosniki1 {
+	font-size: 150%;
+	font-weight: lighter;
+	font-variant: small-caps;
+	border: 1px solid black;
+	line-height: 1.6;
+}
+
+#oartykule {
+	color: pink;
+	text-align: center;
+	line-height: 80%;
+}
+
+
+/*pt	points (1pt = 1/72 of 1in)*/
+#odnosniki2 {
+	font-size: 15pt;
+	line-height: 200%;
+	border-style: ridge;
+	border-width: thick;
+	font-family: "Arial", Times, serif;
+	border-color: yellow;
+}
+
+body {
+	background-image: url(tlo2.jpg);
+	background-repeat: repeat;
+}
+
+
+
+.gay {
+	float: left;
+	width: 25%;
+	height: auto;	
+}
+
+
+
+.say {
+	clear: left;
+}
+
+#odnosniki1 {
+	border-width: thick;
+}
+
+a:link {
+	color: green;
+}
+
+a:visited {
+	color: pink;
+}
+
+a:hover {
+	color: red;
+}
+
+a:active {
+	color: yellow;
+}
+
+label:target {
+	color: red;
+
+	/*to modern, gdy w danym momencie dany element HTML reprezentuje fragment treści, do którego przenieśliśmy się za pomocą adresu URI 
+	wskazującego bezpośrednio na wartość atrybutu id wspomnianego elementu HTML.*/
+}
+
+
+div {
+	border: 2px solid blue;
+	border-radius: 5px 25px 50px 5px;
+	/*zaokrąglenie symetryczne - promień pionowy 
+	będzie taki sam jak poziomy (np.: "5px 10px 15px 20px")
+zaokrąglenie niesymetryczne - pionowe promienie zaokrąglenia
+ można podawać po znaku ukośnika */
+}
+
+/*
+div {
+	border: 2px solid black;
+	border-radius: 15px 50px 30px 5px;
+}
+first value applies to top-left corner, second value applies 
+to top-right corner, third value applies 
+to bottom-right corner, and fourth value applies to bottom-left corner
+*/
+
+p:first-child {
+	color: rgba(255, 0, 0, 0.3);/*red, green, blue, alpha - nieprzezroczystosc*/
+}
+
+p:nth-child(2) {
+	color: hsla(120, 100%, 50%, 0.8); /*hue - odcień, Hue is a degree on 
+	the color wheel (from 0 to 360) - 0 (or 360) is red, 120 is green, 
+	240 is blue. Saturation is a percentage value; 0% means a shade of gray and 100% is the full color. 
+	Lightness is also a percentage; 0% is black, 100% is white.*/
+}
+
+
+div {
+	box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green;
+	/*box-shadow: 
+	none
+	|h-offset Required. The horizontal offset of the shadow.
+	 A positive value puts the shadow on the right side 
+	of the box, a negative value puts the shadow on the left side of the box
+
+	v-offset The vertical offset of the shadow. A positive value puts the
+	 shadow below the box, a negative value puts the shadow above the box
+
+	blur Optional. The blur radius.
+	 The higher the number, the more blurred the shadow will be
+
+	spread color |inset|initial|inherit;*/
+}
+
+
+
+#modern {
+	border: 2px solid black;
+	box-shadow: 5px 5px inherit;
+}
+
+#gradient {
+	background: radial-gradient(blue, gold);
+}
+
+#muzyka {
+	
+}
+

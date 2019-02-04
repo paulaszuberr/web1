@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Form</title>
+	<script type="text/javascript">
+	document.write("<h1 style = 'color: magenta'>");
+
+	document.writeln("Wypełnij formularz misiaczku! :) </h1>");
+
+	</script>
+</head>
+<body>
+
+	<button id="madrosc">Mądrość dla Ciebie</button> 
+	<h1 id="madreslowa"></h1> 
+	<script> 
+	document.getElementById("madrosc").addEventListener("click", function(){ 
+	document.getElementById("madreslowa").innerText = "Kiedy tancerz tańczy, ziemia pod nim jest święta."; 
+	}); 
+	</script>
+
+	<p>
+		<h1 style="color:lightblue;">Przedstaw się!</h1>
+	</p>
+
+	<button onclick="myName()">OK!</button>
+	<p id="imie"></p>
+
+	<h1 id="lata_button">Chcesz dowiedzieć się ile lat rzeczywiście żyjesz?</h1>
+	<button type="button" onclick="myAge()">TAK! </button>
+	<p id="age"></p>
+
+	<h1 id="float_button">Zabawa</h1>
+	<button type="button" onclick="favPrzecinek()">I po to kliknij w ten super przycisk </button>
+	<p id="licz"></p>
+	
+	<h1 id="day_button">Chcesz sprawdzić jaki dziś dzień tygodnia?</h1>
+	<button type="button" onclick="day()">TAK! </button>
+	<p id = "day"></p>
+
+	<h1 id="number_button">Chcesz poznać twoją szczęśliwą liczbę na dziś?</h1>
+	<button type="button" onclick="luckyNumber()">TAK! </button>
+	<p id = "number"></p>
+
+
+	<script src="formularz.js"></script>
+
+	 
+	
+</body>
+</html>
